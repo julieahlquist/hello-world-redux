@@ -1,14 +1,23 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import {Container, Header} from 'semantic-ui-react';
 
-const App = () => {
+const App = (props) => {
   return (
     <>
       <Container>
-       <Header as='h1'>Hello World</Header>
+       <Header as='h1'>{props.state.greeting}</Header>
       </Container>
     </>
   );
 }
 
-export default App;
+const mapStateToProps = (state) => {
+  return {
+    state: state
+  }
+}
+
+export default connect(
+  mapStateToProps
+)(App);
