@@ -1,12 +1,12 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Container, Header, Button, Input } from 'semantic-ui-react';
+import { Container, Button, Input } from 'semantic-ui-react';
 
 const App = (props) => {
   return (
     <>
       <Container>
-       <Header as='h1'>{props.state.greeting}</Header>
+       <Greeting />
         <Input
           placeholder='How would you like to be greeted?'
           onBlur={(event) => props.dispatch({ type: 'PROPOSE_GREETING',
@@ -23,12 +23,4 @@ const App = (props) => {
   );
 }
 
-const mapStateToProps = (state) => {
-  return {
-    state: state
-  }
-}
-
-export default connect(
-  mapStateToProps
-)(App);
+export default connect(null, greetingActions)(App);
