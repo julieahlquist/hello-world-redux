@@ -2,15 +2,15 @@ import initialState from '../store/initialState'
 
 const rootReducer = (state = initialState, action) => {
   switch (action.type) {
+    case 'PROPOSE_GREETING':
+      return {
+        ...state,
+        proposed_greeting: action.payload
+      }
     case 'CHANGE_GREETING':
       return {
         ...state,
         greeting: state.proposed_greeting
-      }
-    case 'PROPOSE_GREETING':
-      return {
-        ...state,
-        proposed_greeting: action.greeting
       }
     default: 
       return state

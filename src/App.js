@@ -1,26 +1,17 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { Container, Button, Input } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
+import GreetingInput from './GreetingInput';
+import Greeting from './Greeting';
 
-const App = (props) => {
+const App = () => {
   return (
     <>
       <Container>
-       <Greeting />
-        <Input
-          placeholder='How would you like to be greeted?'
-          onBlur={(event) => props.dispatch({ type: 'PROPOSE_GREETING',
-        greeting: event.target.value })}
-        />
-        <Button
-          primary
-          onClick={() => props.dispatch({ type: 'CHANGE_GREETING' })}
-        >
-          Change greeting
-        </Button>
+        <Greeting />
+        <GreetingInput />
       </Container>
     </>
-  );
+  )
 }
 
-export default connect(null, greetingActions)(App);
+export default App;
