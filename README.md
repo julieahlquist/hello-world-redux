@@ -1,7 +1,7 @@
-# Hello World using Redux
+#  🌍 Hello World using Redux  🌍
 - Introduction to React Redux by the longest way to code a Hello World application.
 
-## Setup
+## - Setup -
 
 1. Setup React
 ````
@@ -15,7 +15,7 @@ $ yarn add semantic-ui-react semantic-ui-css
 ````
 $ yarn add redux react-redux
 ````
-## Documentaion
+## - Documentaion -
 ➡ [React Redux documentation](https://redux.js.org/basics/usage-with-react) 
 
 ➡ [Walk-through guide](https://medium.com/craft-academy/redux-as-basic-as-it-gets-a416c5a167cd) written by [Thomas Ochman](https://github.com/tochman)
