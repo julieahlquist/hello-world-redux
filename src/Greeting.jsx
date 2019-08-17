@@ -1,13 +1,13 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import { Menu, Header } from 'semantic-ui-react';
 import './navbar.css';
 
 const Greeting = (props) => {
+  
   return (
     <>
-      <Menu id="navbar">
-        <Menu.Item header>HELLO REDUX</Menu.Item>
+      <Menu secondary id="navbar">
         <Menu.Item name='Environment' />
         <Menu.Item name='Medicine' />
         <Menu.Item name='Outreach' />

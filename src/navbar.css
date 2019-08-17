@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Lexend+Giga&display=swap');
+
+
+*{
+  margin-top: 1rem;
+  padding:0%
+}
+
+#header{
+  font-family: 'Lexend Giga', sans-serif;
+  font-size: 50px;
+  text-shadow: -1px 0 black, 0 2px black, 1px 0 black, 0 -1px black;
+  color: white
+
+}
+
 #navbar {
     height: 200px;
 }
