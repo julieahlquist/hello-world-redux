@@ -15,10 +15,10 @@ export default class NavBar extends Component {
         GNOSIS
       </Header>
         <Menu secondary id='navbar'>
-           <Menu.Item name='Latest News' active={activeItem === 'latest news'} onClick={this.handleItemClick} />
-           <Menu.Item name='Environment' active={activeItem === 'environment'} onClick={this.handleItemClick} />
-           <Menu.Item name='Medicine' active={activeItem === 'medicine'} onClick={this.handleItemClick} />
-           <Menu.Item name='Outreach' active={activeItem === 'friends'} onClick={this.handleItemClick} />
+           <Menu.Item className='category' name='Latest Publications' active={activeItem === 'latest news'} onClick={this.handleItemClick} />
+           <Menu.Item className='category' name='Environment' active={activeItem === 'environment'} onClick={this.handleItemClick} />
+           <Menu.Item className='category' name='Medicine' active={activeItem === 'medicine'} onClick={this.handleItemClick} />
+           <Menu.Item className='category' name='Outreach' active={activeItem === 'friends'} onClick={this.handleItemClick} />
            <Menu.Menu position='right'>
             <Menu.Item>
               <Input icon='search' placeholder='Search...' />
