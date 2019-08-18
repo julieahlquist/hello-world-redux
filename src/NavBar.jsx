@@ -10,6 +10,7 @@ export default class NavBar extends Component {
     const { activeItem } = this.state
     return (
       <>
+      <div className='background'>
       <Header id='header' textAlign='center' as='h1'>
         GNOSIS
       </Header>
@@ -25,6 +26,7 @@ export default class NavBar extends Component {
             <Menu.Item name='Log In' active={activeItem === 'login'} onClick={this.handleItemClick} />
           </Menu.Menu>
         </Menu>
+        </div>
       </>
     )
   }
