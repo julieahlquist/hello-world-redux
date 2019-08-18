@@ -21,9 +21,9 @@ export default class NavBar extends Component {
            <Menu.Item className='category' name='Outreach' active={activeItem === 'friends'} onClick={this.handleItemClick} />
            <Menu.Menu position='right'>
             <Menu.Item>
-              <Input icon='search' placeholder='Search...' />
+              <Input className='category' id='search' icon='search' placeholder='Search...' />
             </Menu.Item>
-            <Menu.Item name='Log In' active={activeItem === 'login'} onClick={this.handleItemClick} />
+            <Menu.Item className='category' name='Log In' active={activeItem === 'login'} onClick={this.handleItemClick} />
           </Menu.Menu>
         </Menu>
         </div>

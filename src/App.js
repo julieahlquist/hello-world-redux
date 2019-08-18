@@ -3,6 +3,7 @@ import { Container } from 'semantic-ui-react';
 import GreetingInput from './GreetingInput';
 import Greeting from './Greeting';
 import NavBar from './NavBar';
+import './app.css'
 
 const App = () => {
   return (
