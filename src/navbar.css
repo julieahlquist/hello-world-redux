@@ -6,7 +6,7 @@
 
 .page{
   display: flex;
-  background-image: linear-gradient(rgb(94, 138, 163), rgb(255, 255, 255));
+  background-image: linear-gradient(rgb(155, 156, 184), rgb(255, 255, 255));
 }
 
 #header{
