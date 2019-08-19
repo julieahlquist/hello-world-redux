@@ -22,7 +22,7 @@
 }
 
 #navbar{
-  margin-left: 95px;
+  margin-left: 30px;
   margin-right: 30px;
   margin-top: 0px;
   font-family: 'Lexend Giga', sans-serif;
@@ -30,19 +30,6 @@
   color: white;
 }
 
-#latest{
-  
-  color:rgb(27, 68, 92);
-}
-#medicine{
-  color:rgb(27, 68, 92);
-}
-#outreach{
-  color:rgb(27, 68, 92);
-}
-#environment{
-  color:rgb(27, 68, 92);
-}
-#login{
-  color:rgb(27, 68, 92);
+.link{
+  color:rgb(27, 68, 92) !important;
 }
