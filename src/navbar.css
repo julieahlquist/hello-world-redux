@@ -18,6 +18,7 @@
   /* text-shadow: -1px 0 rgb(38, 94, 126), 0 1px rgb(38, 94, 126), 1px 0  rgb(38, 94, 126), 0 -1px  rgb(38, 94, 126); */
   font-size: 55px;
   color:rgb(21, 55, 75);
+  width:  100% !important;
 }
 
 #navbar{
