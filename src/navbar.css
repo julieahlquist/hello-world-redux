@@ -24,10 +24,15 @@
 #navbar{
   margin-left: 30px;
   margin-right: 30px;
-  margin-top: 0px;
+  margin-bottom: 30px;
   font-family: 'Lexend Giga', sans-serif;
   font-size: 15,5px;
   color: white;
+  width:  100% !important;
+}
+
+.menu{
+  right: 60px !important;
 }
 
 .link{

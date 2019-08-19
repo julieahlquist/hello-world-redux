@@ -11,15 +11,13 @@ export default class NavBar extends Component {
     return (
       <>
       <div className='page'>
-      <Header id='header' as='h1' textAlign='centered'>
-        GNOSIS
-      </Header>
+      <Header id='header'>GNOSIS</Header>
         <Menu secondary id='navbar'>
-           <Menu.Item className='link' name='Latest Publications' active={activeItem === 'latest news'} onClick={this.handleItemClick} />
-           <Menu.Item className='link' name='Environment' active={activeItem === 'environment'} onClick={this.handleItemClick} />
-           <Menu.Item className='link' name='Medicine' active={activeItem === 'medicine'} onClick={this.handleItemClick} />
-           <Menu.Item className='link' name='Outreach' active={activeItem === 'friends'} onClick={this.handleItemClick} />
-           <Menu.Menu position='right'>
+            <Menu.Item className='link' name='Latest Publications' active={activeItem === 'latest news'} onClick={this.handleItemClick} />
+            <Menu.Item className='link' name='Environment' active={activeItem === 'environment'} onClick={this.handleItemClick} />
+            <Menu.Item className='link' name='Medicine' active={activeItem === 'medicine'} onClick={this.handleItemClick} />
+            <Menu.Item className='link' name='Outreach' active={activeItem === 'friends'} onClick={this.handleItemClick} />
+          <Menu.Menu position='right'>
             <Menu.Item>
               <Input className='link' icon='search' placeholder='Search...' />
             </Menu.Item>
